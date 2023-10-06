@@ -1,4 +1,4 @@
 import api from './api'
+import dom from './dom'
 
-api.checkWeather()
-console.log('hello')
+api.checkWeather('london');

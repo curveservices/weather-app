@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="./assets/day/116.png"></a>
+        <a href="#" class="logo"><img src="./assets/116.png"></a>
         <h1 class="title">Weather App</h1>
     </header>
 
@@ -18,17 +18,19 @@
         <div class="form">
             <input class="search-bar" type="text" placeholder="Enter your location..." required>
             <button class="search-button">Search</button>
+            <div class="erorr-messsage"></div>
         </div>
         <div class="top-container">
-            <h1 class="city">London</h1>
-            <div class="weather-icon"><img src="./assets/day/113.png"></div>
-            <div class="temp">°C</div>
+            <h1 class="city"></h1>
+            <img class="weather-icon">
+            <h3 class="condition-text"></h3>
+            <div class="temp"></div>
         </div>
         <div class="bottom-container">
-            <div class="wind"><i class="fa-solid fa-wind"></i></div>
-            <div class="feels-like">Feels like</div>
-            <div class="precip">0</div>
-            <div class="humidity"><i class="fa-solid fa-droplet"></i></div>
+            <i class="fa-solid fa-wind"></i><div class="wind"></div>
+            <div class="feels-like"></div>
+            <div class="precip"></div>
+            <i class="fa-solid fa-droplet"></i><div class="humidity"></div>
         </div>
     </main>
     <footer>

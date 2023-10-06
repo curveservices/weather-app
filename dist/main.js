@@ -16,7 +16,17 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst api = (() => {\n    \n    const apiKey = 'c19f5715236a49e6ab4144317230310';\n    const apiURL = \"http://api.weatherapi.com/v1/current.json?\";\n    const apiIcons = \"https://www.weatherapi.com/docs/weather_conditions.json\"\n\n    async function checkWeather() {\n        const response = await fetch(apiURL + `key=${apiKey}` + '&q=london');\n        const data = await response.json();\n        // const iconResponse = await fetch(apiIcons);\n        // const dataIcons = await iconResponse.json();\n\n        console.log(data)\n        console.log(data.location.name);\n        console.log(data.current.condition.icon);\n        console.log(data.current.condition.text);\n        \n    }\n\n    return {\n        checkWeather,\n    }\n})()\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (api);\n\n//# sourceURL=webpack://weather-app/./src/api.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n\n\nconst api = (() => {\n    \n    const apiKey = 'c19f5715236a49e6ab4144317230310';\n    const apiURL = \"http://api.weatherapi.com/v1/current.json?\";\n    // const apiIcons = \"https://www.weatherapi.com/docs/weather_conditions.json\";\n\n    const searchBar = document.querySelector('.search-bar');\n    const searchButton = document.querySelector('.search-button')\n\n    async function checkWeather(city) {\n        const response = await fetch(apiURL + `key=${apiKey}` + `&q=${city}`);\n        const data = await response.json();\n        // const iconResponse = await fetch(apiIcons);\n        // const dataIcons = await iconResponse.json();\n\n        console.log(data)\n        console.log(data.location.name);\n        console.log(data.current.condition.icon);\n        console.log(data.current.condition.text);\n        console.log(data.current.temp_c);\n        console.log(data.current.wind_mph);\n        console.log(data.current.feelslike_c);\n        console.log(data.current.precip_mm);\n        console.log(data.current.humidity);\n\n\n    }\n\n    searchButton.addEventListener('click', () => {\n        checkWeather(searchBar.value)\n        console.log(searchBar.value)\n    })\n\n    return {\n        checkWeather,\n    }\n})()\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (api);\n\n//# sourceURL=webpack://weather-app/./src/api.js?");
+
+/***/ }),
+
+/***/ "./src/dom.js":
+/*!********************!*\
+  !*** ./src/dom.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api */ \"./src/api.js\");\n\n\n//# sourceURL=webpack://weather-app/./src/dom.js?");
 
 /***/ }),
 

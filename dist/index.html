@@ -1,43 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/e4551d0d55.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e4551d0d55.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Weather app</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="#" class="logo"><img src="./assets/116.png"></a>
-        <h1 class="title">Weather App</h1>
+      <a href="#" class="logo"><img src="./assets/116.png" /></a>
+      <h1 class="title">Weather App</h1>
     </header>
 
     <main>
-        <div class="form">
-            <input class="search-bar" type="text" placeholder="Enter your location..." required>
-            <button class="search-button">Search</button>
-            <div class="erorr-messsage"></div>
-        </div>
-        <div class="top-container">
-            <h1 class="city"></h1>
-            <img class="weather-icon">
-            <h3 class="condition-text"></h3>
-            <div class="temp"></div>
-        </div>
-        <div class="bottom-container">
-            <i class="fa-solid fa-wind"></i><div class="wind"></div>
-            <div class="feels-like"></div>
-            <div class="precip"></div>
-            <i class="fa-solid fa-droplet"></i><div class="humidity"></div>
-        </div>
+      <div class="form">
+        <input
+          class="search-bar"
+          type="text"
+          placeholder="Enter your location..."
+          required
+        />
+        <button class="search-button">Search</button>
+        <div class="erorr-messsage"></div>
+      </div>
+      <div class="top-container">
+        <h1 class="city"></h1>
+        <img class="weather-icon" />
+        <h3 class="condition-text"></h3>
+        <div class="temp"></div>
+      </div>
+      <div class="bottom-container">
+        <i class="fa-solid fa-wind"></i>
+        <div class="wind"></div>
+        <div class="feels-like"></div>
+        <div class="precip"></div>
+        <i class="fa-solid fa-droplet"></i>
+        <div class="humidity"></div>
+      </div>
     </main>
     <footer>
-        Built by <a class="footer-link" href="https://github.com/curveservices" target="_blank">Rozla-Dev</a>
-        | <a class="footer-link" href="https://github.com/curveservices/weather-app" target="_blank" >
-        Source </a><i class="fa-brands fa-github"></i>
+      Built by
+      <a
+        class="footer-link"
+        href="https://github.com/curveservices"
+        target="_blank"
+        >Rozla-Dev</a
+      >
+      |
+      <a
+        class="footer-link"
+        href="https://github.com/curveservices/weather-app"
+        target="_blank"
+      >
+        Source </a
+      ><i class="fa-brands fa-github"></i>
     </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

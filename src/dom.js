@@ -1,19 +1,11 @@
-import api from './api'
+import api from "./api";
 
 const dom = (() => {
+  function renderDom() {}
 
-    function renderDom() {
-        
-
-};
-
-
-    
-
-    return {
-        renderDom,
-    }
-
+  return {
+    renderDom,
+  };
 })();
 
 export default dom;

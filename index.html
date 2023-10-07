@@ -18,7 +18,7 @@
     </header>
 
     <main>
-      <div class="form">
+      <form novalidation action="#" class="form" method="get">
         <input
           class="search-bar"
           type="text"
@@ -26,21 +26,25 @@
           required
         />
         <button class="search-button">Search</button>
-        <div class="erorr-messsage"></div>
-      </div>
-      <div class="top-container">
-        <h1 class="city"></h1>
-        <img class="weather-icon" />
-        <h3 class="condition-text"></h3>
-        <div class="temp"></div>
-      </div>
-      <div class="bottom-container">
-        <i class="fa-solid fa-wind"></i>
-        <div class="wind"></div>
-        <div class="feels-like"></div>
-        <div class="precip"></div>
-        <i class="fa-solid fa-droplet"></i>
-        <div class="humidity"></div>
+        <div class="error">
+          <p>Invalid city name</p>
+        </div>
+      </form>
+      <div class="weather">
+        <div class="top-container">
+          <h1 class="city"></h1>
+          <img class="weather-icon" />
+          <h3 class="condition-text"></h3>
+          <div class="temp"></div>
+        </div>
+        <div class="bottom-container">
+          <i class="fa-solid fa-wind"></i>
+          <div class="wind"></div>
+          <div class="feels-like"></div>
+          <div class="precip"></div>
+          <i class="fa-solid fa-droplet"></i>
+          <div class="humidity"></div>
+        </div>
       </div>
     </main>
     <footer>

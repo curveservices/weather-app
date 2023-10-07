@@ -1,5 +1,3 @@
-import api from "./api";
-import dom from "./dom";
-import validation from "./validation";
+import api from "./api.js";
 
-api.checkWeather("london");
+api.fetchWeatherData("london");

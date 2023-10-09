@@ -1,6 +1,6 @@
 # Project: Weather app
 
-## Live Demo 👉 <a href="https://curveservices.github.io/weather-app/"></a>
+## Live Demo 👉 (https://curveservices.github.io/weather-app/")
 
 ## PC View 👇
 

@@ -6,30 +6,44 @@ const weatherUI = (() => {
   const weather = document.querySelector(".weather");
   const searchBar = document.querySelector(".search-bar");
   const searchButton = document.querySelector(".search-button");
+
   //Render data
   function updateDOM(data) {
-    document.querySelector(".city").textContent = `${data.location.name}`;
+    console.log(data);
+    document.querySelector(".city").innerHTML = data.location.name;
+
+    document.querySelector(".country").innerHTML = data.location.country;
 
     document.querySelector(".weather-icon").src =
       "https:" + `${data.current.condition.icon}`;
 
-    document.querySelector(".condition-text").textContent =
+    document.querySelector(".condition-text").innerHTML =
       data.current.condition.text;
 
-    document.querySelector(".temp").textContent =
-      Math.round(data.current.temp_c) + " °C";
+    document.querySelector(".temp").innerHTML =
+      Math.round(data.current.temp_c) + "&degC";
 
-    document.querySelector(".wind").textContent =
-      "Wind " + Math.round(data.current.wind_mph) + " mph";
+    document.querySelector(".date").innerHTML = data.location.localtime;
 
-    document.querySelector(".feels-like").textContent =
-      "Feels like " + Math.round(data.current.feelslike_c) + " °C";
+    document.querySelector(".wind").innerHTML =
+      `<i class="fa-solid fa-wind fa-fade"></i>  Wind SP ` +
+      Math.round(data.current.wind_mph) +
+      "mph";
 
-    document.querySelector(".precip").textContent =
-      "Precipitation " + data.current.precip_in + " inches";
+    document.querySelector(".feels-like").innerHTML =
+      `<i class="fa-solid fa-hand-point-up fa-bounce"></i>  Feels like ` +
+      Math.round(data.current.feelslike_c) +
+      "&degC";
 
-    document.querySelector(".humidity").textContent =
-      "Humidity " + data.current.humidity + " %";
+    document.querySelector(".precip").innerHTML =
+      `<i class="fa-solid fa-cloud-showers-heavy fa-beat-fade"></i> Precip ` +
+      data.current.precip_in +
+      "inches";
+
+    document.querySelector(".humidity").innerHTML =
+      `<i class="fa-solid fa-water fa-shake"></i>Humidity ` +
+      data.current.humidity +
+      "%";
   }
 
   function handleError() {

@@ -50,8 +50,27 @@ const weatherUI = (() => {
     error.style.display = "block";
     weather.style.display = "none";
   }
+
+  function showLoadingSpinner() {
+    // Show the loader
+    document.querySelector(".loader-container").style.display = "block";
+    // Hide the content
+    document.querySelector("main").style.display = "none";
+    // Simulate a 1-second loading time
+    setTimeout(function () {
+      // Hide the loader
+      document.querySelector(".loader-container").style.display = "none";
+      // Display the content
+      document.querySelector("main").style.display = "block";
+    }, 500);
+  }
+
   searchButton.addEventListener("click", () => {
-    api.fetchWeatherData(searchBar.value);
+    api.fetchWeatherData(searchBar.value, showLoadingSpinner());
+  });
+
+  window.addEventListener("load", function () {
+    showLoadingSpinner();
   });
 
   // Return the public interface of the module

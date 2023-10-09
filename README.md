@@ -1,10 +1,10 @@
 # Project: Weather app
 
-## Live Demo 👉 (https://curveservices.github.io/weather-app/")
+## Live Demo 👉 [Weather App](https://curveservices.github.io/weather-app/)
 
 ## PC View 👇
 
-![Screenshot 2023-10-09 at 14 54 02](https://github.com/curveservices/weather-app/assets/101556296/c692cc9b-2c1c-482f-930e-87dbff3ba460")
+![Screenshot 2023-10-09 at 14 54 02](https://github.com/curveservices/weather-app/assets/101556296/c692cc9b-2c1c-482f-930e-87dbff3ba460)
 
 ## Overview
 

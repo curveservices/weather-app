@@ -186,14 +186,13 @@ a {
   margin: 0px;
   font-size: 18px;
 }
-
 @media only screen and (min-width: 600px) {
   header {
     margin: 0;
   }
 
   .loader-container {
-    left: 45%;
+    left: 40%;
   }
 
   .error {

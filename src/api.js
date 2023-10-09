@@ -8,7 +8,9 @@ const api = (() => {
 
   async function fetchWeatherData(city) {
     try {
-      const response = await fetch(apiURL + `key=${apiKey}` + `&q=${city}`);
+      const response = await fetch(
+        apiURL + `key=${apiKey}` + `&q=${city} mode:{ cors }`,
+      );
       if (!response.ok) {
         weatherUI.handleError();
         return;

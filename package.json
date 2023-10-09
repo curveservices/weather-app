@@ -8,7 +8,8 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "prepare": "husky install",
-    "prettier": "prettier . --write"
+    "prettier": "prettier . --write",
+    "pages": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "paul rossiter",
   "license": "ISC",

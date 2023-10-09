@@ -32,16 +32,16 @@ header {
 }
 
 main {
-  display: none;
+  display: block;
 }
 
 .loader-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 25%;
-  left: 50%;
+  left: 45%;
 }
 
 .loader {

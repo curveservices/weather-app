@@ -41,7 +41,7 @@ main {
   align-items: center;
   position: fixed;
   top: 25%;
-  left: 45%;
+  left: 35%;
 }
 
 .loader {
@@ -148,7 +148,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 4rem;
+  margin-top: 1rem;
   max-width: 100%;
   text-align: center;
   font-size: 13px;
@@ -191,6 +191,11 @@ a {
   header {
     margin: 0;
   }
+
+  .loader-container {
+    left: 45%;
+  }
+
   .error {
     text-align: center;
     margin-left: -8em;

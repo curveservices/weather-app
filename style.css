@@ -16,6 +16,13 @@ html {
   line-height: 1.6;
 }
 
+body {
+  font-family: "Antic Slab", serif;
+  background: var(--background);
+  height: 100vh;
+  color: #fff;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -24,11 +31,46 @@ header {
   gap: 0.5rem;
 }
 
-body {
-  font-family: "Antic Slab", serif;
-  background: var(--background);
-  height: 100vh;
-  color: #fff;
+main {
+  display: none;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 25%;
+  left: 40%;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .form {
@@ -43,6 +85,7 @@ input {
   background: #ebfffc;
   color: #555;
   height: 30px;
+  width: auto;
   border-radius: 30px;
   margin-right: 16px;
   font-size: 16px;
@@ -85,12 +128,13 @@ button {
 }
 
 .weather-icon {
+  margin-top: 0.5rem;
   width: 150px;
   height: 150px;
 }
 
 .condition-text {
-  margin-top: -1em;
+  margin-top: -0.5em;
 }
 
 .temp {

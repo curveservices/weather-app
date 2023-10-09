@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml, <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌤️</text></svg>"
+    />
     <script
       src="https://kit.fontawesome.com/e4551d0d55.js"
       crossorigin="anonymous"
@@ -22,27 +26,30 @@
         <input
           class="search-bar"
           type="text"
-          placeholder="Enter your location..."
-          required
+          onfocus="this.value=''"
+          value="Enter your city..."
         />
-        <button class="search-button">Search</button>
-        <div class="error">
-          <p>Invalid city name</p>
-        </div>
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </form>
+      <div class="error">Invalid city name</div>
       <div class="weather">
-        <div class="top-container">
-          <h1 class="city"></h1>
+        <div class="weather-content">
           <img class="weather-icon" />
-          <h3 class="condition-text"></h3>
+          <h2 class="condition-text"></h2>
           <div class="temp"></div>
+          <h1 class="city"></h1>
+          <div class="country"></div>
+          <div class="date"></div>
         </div>
-        <div class="bottom-container">
-          <i class="fa-solid fa-wind"></i>
+        <div class="first-row">
           <div class="wind"></div>
+          <div class="sep">|</div>
           <div class="feels-like"></div>
+          <div class="sep">|</div>
           <div class="precip"></div>
-          <i class="fa-solid fa-droplet"></i>
+          <div class="sep">|</div>
           <div class="humidity"></div>
         </div>
       </div>

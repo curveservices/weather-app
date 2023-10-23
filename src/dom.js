@@ -66,7 +66,7 @@ const weatherUI = (() => {
   }
 
   searchButton.addEventListener("click", () => {
-    api.fetchWeatherData(showLoadingSpinner(), searchBar.value);
+    api.fetchWeatherData(searchBar.value, showLoadingSpinner());
   });
 
   window.addEventListener("load", function () {

@@ -4,7 +4,7 @@
 
 ## PC View 👇
 
-![Screenshot 2023-10-09 at 14 54 02](https://github.com/curveservices/weather-app/assets/101556296/c692cc9b-2c1c-482f-930e-87dbff3ba460)
+<img width="684" alt="Screenshot 2023-12-08 at 14 33 49" src="https://github.com/curveservices/weather-app/assets/101556296/1de7ba14-ac98-4861-8dbc-42486e1ba2ca">
 
 ## Overview
 
